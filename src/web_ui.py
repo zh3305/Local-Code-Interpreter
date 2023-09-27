@@ -7,8 +7,7 @@ def initialization(state_dict: Dict) -> None:
         os.mkdir('cache')
     if state_dict["bot_backend"] is None:
         state_dict["bot_backend"] = BotBackend()
-        if 'OPENAI_API_KEY' in os.environ:
-            del os.environ['OPENAI_API_KEY']
+
 
 
 def get_bot_backend(state_dict: Dict) -> BotBackend:
@@ -182,4 +181,4 @@ if __name__ == '__main__':
         block.load(fn=initialization, inputs=[state])
 
     block.queue()
-    block.launch(inbrowser=False,server_port=7860,server_name="0.0.0.0")
+    block.launch(inbrowser=True)
