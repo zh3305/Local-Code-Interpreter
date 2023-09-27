@@ -39,4 +39,4 @@ CMD ["python", "web_ui.py"]
 # docker run   --rm -it  -e OPENAI_API_KEY=<youApikey> -e API_base="https://api.pawan.krd/backend-api/conversation/v1" -p 7860:7860 localcodeinterpreter
 # docker run   --rm -it  -e OPENAI_API_KEY=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 -e OPENAI_API_base="https://ai.fakeopen.com/api/conversation/v1" -p 7860:7860 localcodeinterpreter
 
-# docker run   --rm -it  -e OPENAI_API_KEY=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 -e OPENAI_API_base="https://chatgpt2.nextweb.fun/api/proxy/v1" -p 7860:7860 localcodeinterpreter
+# docker run   --rm -it  -e OPENAI_API_KEY=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 -e OPENAI_API_base=https://chatgpt2.nextweb.fun/api/proxy/v1 -p 7860:7860 localcodeinterpreter

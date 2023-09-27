@@ -122,10 +122,10 @@ class BotBackend(GPTResponseLog):
 
     def _init_api_config(self):
         self.config = get_config()
-        api_type =os.getenv("OPENAI_API_TYPE", self.config['API_TYPE'] )  
-        api_base =os.getenv('OPENAI_API_base',self.config['API_base'])
-        api_version = os.getenv('OPENAI_API_VERSION',self.config['API_VERSION'] )
-        api_key = os.getenv('OPENAI_API_KEY',self.config['API_KEY'])
+        api_type =os.getenv("INTERPETER_API_TYPE", self.config['API_TYPE'] )  
+        api_base =os.getenv('INTERPETER_API_BASE',self.config['API_base'])
+        api_version = os.getenv('INTERPETER_API_VERSION',self.config['API_VERSION'] )
+        api_key = os.getenv('INTERPETER_API_KEY',self.config['API_KEY'])
         config_openai_api(api_type, api_base, api_version, api_key)
 
     def _init_kwargs_for_chat_completion(self):
